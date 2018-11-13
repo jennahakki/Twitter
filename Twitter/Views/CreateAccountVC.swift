@@ -18,10 +18,9 @@ class CreateAccountVC: UIViewController {
         super.viewDidLoad()
         
         twitterLogoItem()
-        
     }
     
-    @IBAction func stopBtnPressed(_ sender: Any) {
+    @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
@@ -37,11 +36,6 @@ class CreateAccountVC: UIViewController {
             }
         }
     }
-    
-    // Put this code in Login VC class
-//    func btn() {
-//        Auth.auth().signIn(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
-//    }
     
     func twitterLogoItem() {
         let image = UIImage(named: "twitter logo")
