@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>541276161067-roii7la53jlgtalsqjka6vbcb0ctb45b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.541276161067-roii7la53jlgtalsqjka6vbcb0ctb45b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA-e2VLeQ3XTHairxFC956kN5RPTIfHiwU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>541276161067</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hakkiapps.Twitter</string>
+	<key>PROJECT_ID</key>
+	<string>twitter-e904a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>twitter-e904a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:541276161067:ios:4288b72c7b89d24e</string>
+	<key>DATABASE_URL</key>
+	<string>https://twitter-e904a.firebaseio.com</string>
+</dict>
+</plist>
