@@ -22,6 +22,9 @@ class CreateAccountVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        twitterLogoItem()
+        
     }
 
     // MARK: - Table view data source
@@ -103,6 +106,14 @@ class CreateAccountVC: UITableViewController {
                 print(data?.user.email ?? "")
             }
         }
+    }
+    
+    func twitterLogoItem() {
+        let image = UIImage(named: "twitter logo")
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 35))
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = image
+        navigationItem.titleView = imageView
     }
 
 }
