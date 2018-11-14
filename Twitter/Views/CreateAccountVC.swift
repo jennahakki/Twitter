@@ -17,11 +17,15 @@ class CreateAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        twitterLogoItem()
+       twitterLogoItem(navItem: navigationItem)
+        
+        if let nav = navigationController {
+        removeLine(navController: nav)
+        }
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func signUpBtnPressed(_ sender: Any) {
@@ -37,12 +41,6 @@ class CreateAccountVC: UIViewController {
         }
     }
     
-    func twitterLogoItem() {
-        let image = UIImage(named: "twitter logo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 35))
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = image
-        navigationItem.titleView = imageView
-    }
+ 
 
 }

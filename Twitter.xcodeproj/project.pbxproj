@@ -17,6 +17,8 @@
 		3BD676A8219A53C3001DC44F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD676A6219A53C3001DC44F /* LaunchScreen.storyboard */; };
 		3BD676B0219A790B001DC44F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD676AF219A790B001DC44F /* MainVC.swift */; };
 		3BD676B3219A7C49001DC44F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BD676B2219A7C49001DC44F /* GoogleService-Info.plist */; };
+		3BDEC8AA219C74F00079495D /* RemoveNaviLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDEC8A9219C74F00079495D /* RemoveNaviLine.swift */; };
+		3BDEC8AD219C78050079495D /* TwitterLogoIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDEC8AC219C78050079495D /* TwitterLogoIcon.swift */; };
 		5342276C57D932066EB162AA /* Pods_Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B753DC6E4041DF47A57500A /* Pods_Twitter.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		3BD676A9219A53C3001DC44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD676AF219A790B001DC44F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		3BD676B2219A7C49001DC44F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BDEC8A9219C74F00079495D /* RemoveNaviLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveNaviLine.swift; sourceTree = "<group>"; };
+		3BDEC8AC219C78050079495D /* TwitterLogoIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLogoIcon.swift; sourceTree = "<group>"; };
 		A7CEBB9200386BE3F17F39C2 /* Pods-Twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter/Pods-Twitter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +75,7 @@
 		3BD6769A219A53C2001DC44F /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				3BDEC8AB219C771A0079495D /* Model */,
 				3BD676B1219A7B27001DC44F /* Views */,
 				3BD6769B219A53C2001DC44F /* AppDelegate.swift */,
 				3BD676A1219A53C2001DC44F /* Main.storyboard */,
@@ -92,6 +97,15 @@
 				3B000798219B7A1E00238C69 /* LoginVC.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3BDEC8AB219C771A0079495D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BDEC8A9219C74F00079495D /* RemoveNaviLine.swift */,
+				3BDEC8AC219C78050079495D /* TwitterLogoIcon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		947E0029D824D136E96017E0 /* Pods */ = {
@@ -232,6 +246,8 @@
 				3BD676B0219A790B001DC44F /* MainVC.swift in Sources */,
 				3B000799219B7A1E00238C69 /* LoginVC.swift in Sources */,
 				3BD6769C219A53C2001DC44F /* AppDelegate.swift in Sources */,
+				3BDEC8AA219C74F00079495D /* RemoveNaviLine.swift in Sources */,
+				3BDEC8AD219C78050079495D /* TwitterLogoIcon.swift in Sources */,
 				3BD4BF4C219A8D71000EA5AD /* CreateAccountVC.swift in Sources */,
 				3BD6769E219A53C2001DC44F /* FirstViewController.swift in Sources */,
 			);

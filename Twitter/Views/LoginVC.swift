@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  LoginVC.swif
 //  Twitter
 //
 //  Created by Jenna H on 11/13/18.
@@ -10,8 +10,6 @@ import UIKit
 import Firebase
 
 class LoginVC: UIViewController {
-    
-    var createAccountVC = CreateAccountVC()
 
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var pwTxtField: UITextField!
@@ -19,15 +17,18 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createAccountVC.twitterLogoItem()
+        twitterLogoItem(navItem: navigationItem)
+        
+        if let nav = navigationController {
+            removeLine(navController: nav)
+        }
     }
     
     @IBAction func cancelBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
-    
         Auth.auth().signIn(withEmail: emailTxtField.text!, password: pwTxtField.text!) { (data, err) in
             if let err = err {
                 print(err.localizedDescription)

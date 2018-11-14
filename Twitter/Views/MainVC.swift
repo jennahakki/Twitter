@@ -13,25 +13,12 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        twitterLogoItem(navItem: navigationItem)
+        
+        if let nav = navigationController {
+        removeLine(navController: nav)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-    @IBAction func createAccBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "ToCreateAccVC", sender: self)
-    }
-    
-    @IBAction func loginBtnPressed(_ sender: Any) {
+        
     }
     
 }
