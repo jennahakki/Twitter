@@ -14,6 +14,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var pwTxtField: UITextField!
     
+    var homeTableVC = HomeTableVC()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +36,7 @@ class LoginVC: UIViewController {
                 print(err.localizedDescription)
             } else {
                 print(data?.user.email ?? "")
+                self.performSegue(withIdentifier: "ToHomeTableVC", sender: self)
             }
         }
     }

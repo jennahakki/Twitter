@@ -36,7 +36,7 @@ class CreateAccountVC: UIViewController {
                 print(data?.user.email ?? "")
                 
                 // If no error, go to next VC
-                // performSegue(withIdentifier: "", sender: self)
+                
             }
         }
     }
